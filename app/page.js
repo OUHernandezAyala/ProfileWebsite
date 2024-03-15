@@ -4,6 +4,7 @@ import NavBar from "./Components/NavBar";
 import AboutMe from "./Components/AboutMe";
 import ProjectsSection from "./Components/Projects";
 import EmailSection from "./Components/EmailSection";
+import Footer from "./Components/Footer";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         <AboutMe/>
         <ProjectsSection/>
         <EmailSection/>
+        <Footer/>
       </div>
     </main>
   );
