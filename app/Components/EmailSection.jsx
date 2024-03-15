@@ -1,11 +1,43 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import GithubIcon from "../../public/images/icons/github-icon.svg"
 import LinkedinIcon from "../../public/images/icons/linkedin-icon.svg"
+import WhatsappIcon from "../../public/images/icons/whatsapp-icon.svg"
 
 
 const EmailSection = () => {
+    const [emailSend, setEmailSend] = useState(false)
+    const handelSubmint = async (e) => {
+        e.preventDefault(); 
+        const data = {
+            email: e.target.email.value,
+            subject: e.target.subject.value,
+            message: e.target.message.value
+        };
+        
+    
+        const JSONdata = JSON.stringify(data);
+        const endpoint = "/api/send";
+        const fetchOptions =  {
+            method: 'POST',
+            headers: {
+                'Content-type': 'application/json'
+            },
+            body: JSONdata
+        }
+    
+        const response = await fetch(endpoint,fetchOptions);
+        const responseData = await response.json();
+    
+        if (response.status === 200) {
+            console.log('Message Sent');
+            setEmailSend(true);
+        }
+    };
+    
+
     return(
         <section className="grid grid-cols-2 my-12 md:my-12 py-20 gap-4">
             <div>
@@ -18,6 +50,9 @@ const EmailSection = () => {
 
                 </p>
                 <div className="socials flex flex-row gap-2">
+                    <Link href="https://wa.me/5567886682">
+                        <Image src={WhatsappIcon} alt="whatsapp"/>
+                    </Link>
                     <Link href="https://www.linkedin.com/in/oscar-uriel-hernández-ayala/">
                         <Image src={LinkedinIcon} alt="linkedin"/>
                     </Link>
@@ -27,7 +62,7 @@ const EmailSection = () => {
                 </div>
             </div>
             <div>
-                    <form className="flex flex-col gap-2">
+                    <form className="flex flex-col gap-2" onSubmit={handelSubmint}>
                         <label htmlFor="email" type="email" className="text-white">Your Email</label>
                         <input 
                          type="email" 
@@ -50,8 +85,17 @@ const EmailSection = () => {
                          required 
                          placeholder="Write whatever you want to say to me!!!"/>
                          <div className="flex justify-center items-center mt-2">
-                            <button className="rounded-full w-full py-2.5 px-5 bg-gradient-to-br from-[#0abdc6] via-[#711c91] to-[#ea00d9]  hover:bg-slate-900 hover:text-black text-white">Send</button>
+                            <button 
+                            type="submit"
+                            className="rounded-full w-full py-2.5 px-5 bg-gradient-to-br from-[#0abdc6] via-[#711c91] to-[#ea00d9]  hover:bg-slate-900 hover:text-black text-white">Send</button>
                          </div>
+                         {
+                                emailSend && (
+                                    <p className="text-green-500 text-sm">
+                                        Email sent successfuly!!!
+                                    </p>
+                                )
+                            }
                     </form>
             </div>
         </section>
