@@ -39,9 +39,9 @@ const EmailSection = () => {
     
 
     return(
-        <section className="grid grid-cols-2 my-12 md:my-12 py-20 gap-4">
+        <section id="mail-sectione" className="grid grid-cols-2 my-12 md:my-12 py-20 gap-4">
             <div>
-                <h5 className="text-white text-xl font-bold my-2">Let's Connect</h5>
+                <h5 className=" text-2xl font-bold my-2 text-transparent bg-clip-text bg-gradient-to-br  from-[#0abdc6]  to-[#ea00d9]">Let's Connect</h5>
                 <p className="text-[#ADB7BE] mb-4 mx-w-md">
                 Hello! I'm actively seeking new career opportunities and would love to connect with professionals 
                 in my field. Whether it's networking, discussing potential collaborations, or exploring job opportunities, 

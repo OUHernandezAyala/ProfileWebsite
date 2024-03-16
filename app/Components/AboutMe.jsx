@@ -11,15 +11,14 @@ const AboutMe = () => {
                 () => {setTab(id)}
             );
     };
-
 const tabInfo = [
     {
         title:"Skills",
         id:"skills",
         content:(
             <ul className="list-disk pl-4">
-                <li>React</li>
-                <li>Flask</li>
+                <li>JavaScript</li>
+                <li>Python</li>
                 <li>SQL</li>
                 <li>Html</li>
                 <li>Css(taildwind)</li>
@@ -48,7 +47,7 @@ const tabInfo = [
 ]
 
     return(
-        <section className="text-white sm:pt-5 ">
+        <section id="about" className="text-white sm:pt-5 ">
             <div className="md:grid md:grid-cols-2 gap-8 items-center py-18 px-4 pt-28 xl:gap-16 sm:px-16">
                 <Image 
                 src="/images/desk1.gif"
@@ -62,14 +61,12 @@ const tabInfo = [
                         About me!!
                     </h2>
                     <p className="text-base lg:text-lg">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad 
-                        aliquam rem vel necessitatibus in voluptatem eligendi natus magni! 
-                        Quibusdam fugit aliquid possimus ex dolor aut est cumque adipisci 
-                        autem neque? 
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed alias 
-                        libero excepturi laudantium blanditiis repellat tenetur, molestiae vel 
-                        possimus, quae nulla aperiam explicabo maxime eveniet rerum non laboriosam 
-                        assumenda fugiat.
+                    🔭⚡My name is Oscar Uriel, a recent graduate software developer in computer engineering from UPIICSA, 
+                    with a course at 4Geeks to enhance my skills in web development. Additionally, I have an internship in Traffic 
+                    Engineering, Secretary of Citizen Security, CDMX, where I supervise traffic events, optimize 
+                    workflow, and apply effective communication skills.🌐💻 Currently, I'm focused on refining my skills in 
+                    web development and exploring new technologies to enhance my software development experience.🤝🚀 
+                     I'm also interested in joining teams working on innovative projects addressing real-world problems.
                     </p>
                     <div className="flex flex-row mt-8">
                         <TabAboutMe selectTab={() => handelTapChange("skills")} active={tab === "skills"}>

@@ -22,8 +22,8 @@ const projectsInfo = [
 
 const ProjectsSection = () => {
     return(
-       <div className="py-28">
-        <h2 className="text-center text-4xl  font-bold text-white my-4">Projects</h2>
+       <div id="projects" className="py-20">
+        <h2 className="text-4xl font-bold my-4 text-transparent text-center bg-clip-text bg-gradient-to-br from-[#0abdc6]  to-[#ea00d9]">Projects</h2>
         <div    className="grid md:grid-cols-3 gap-8 md:gap-10" >
         {projectsInfo.map((projects)=> 
                 <ProjectsCards 
