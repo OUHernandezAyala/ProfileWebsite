@@ -36,7 +36,7 @@ const MySection = () => {
                     />
                     </h1>
                     <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
-                     As a Web Developer with an unwavering passion for unlocking new possibilities, I embrace a philosophy that resonates deeply: 'Begin by doing what's necessary; then do what's possible; and suddenly you find yourself accomplishing the impossible.🚀
+                     As a Web Developer with an unwavering passion for unlocking new possibilities, I embrace a philosophy that resonates deeply: Begin by doing what`s necessary; then do what`s possible; and suddenly you find yourself accomplishing the impossible.🚀
                     </p>
                     <div className="mt-4 mb-2">
                         <button onClick={scrollToEmailSection} className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 mt-1 bg-gradient-to-br from-[#0abdc6] via-[#711c91] to-[#ea00d9]  hover:bg-slate-900 hover:text-white text-black">
