@@ -48,13 +48,13 @@ const tabInfo = [
 
     return(
         <section id="about" className="text-white sm:pt-5 ">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-18 px-4 pt-28 xl:gap-16 sm:px-16">
+            <div className="md:grid md:grid-cols-2 gap-8 items-center py-18 px-4 pt-28 xl:gap-16 sm:px-16 max-w-600 max-h-600">
                 <Image 
                 src="/images/desk1.gif"
                 alt="ImageAboutme"
                 className="rounded- rounded-md py-4"
-                width={600}
-                height={600}
+                width={599}
+                height={599}
                 />
                 <div className="mt-4 mb:mt-0 text-left flex flex-col h-full">
                     <h2 className="text-4xl font-bold mb-4 text-transparent bg-clip-text bg-gradient-to-br from-[#0abdc6]  to-[#ea00d9]">
