@@ -16,12 +16,12 @@ const tabInfo = [
         title:"Skills",
         id:"skills",
         content:(
-            <ul className="list-disk pl-4">
-                <li>JavaScript</li>
-                <li>Python</li>
-                <li>SQL</li>
-                <li>Html</li>
-                <li>Css(taildwind)</li>
+            <ul className="flex flex-col list-disk pl-4 gap-4">
+                <li className="bold hover:underline">JavaScript</li>
+                <li className="bold hover:underline">Python</li>
+                <li className="bold hover:underline">SQL</li>
+                <li className="bold hover:underline">Html</li>
+                <li className="bold hover:underline">Css(taildwind)</li>
             </ul>
         )
     },
@@ -48,11 +48,11 @@ const tabInfo = [
 
     return(
         <section id="about" className="text-white sm:pt-5 ">
-            <div className="md:grid md:grid-cols-2 gap-8 items-center py-18 px-4 pt-28 xl:gap-16 sm:px-16 max-w-600 max-h-600">
+            <div className="md:grid grid-cols-1 lg:grid-cols-2 gap-8 items-center py-18 px-4 pt-28 xl:gap-16 sm:px-16 max-w-600 max-h-600">
                 <Image 
                 src="/images/desk1.gif"
                 alt="ImageAboutme"
-                className="rounded- rounded-md py-4"
+                className="rounded-3xl py-4 shadow-xl shadow-indigo-950"
                 width={599}
                 height={599}
                 />

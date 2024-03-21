@@ -13,7 +13,7 @@ const MySection = () => {
         document.getElementById('mail-sectione').scrollIntoView({ behavior: 'smooth' });
       };
     return (
-        <section className="lg:py-16 ">
+        <section id="home" className="lg:py-16 ">
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="lg:col-span-8 flex flex-col mb-2 place-self-center text-center sm:text-left justify-self-start ">
                     <h1 className="mb-4 text-4xl lg:text-6xl mx-4 lg:leading-normal font-extrabold">
