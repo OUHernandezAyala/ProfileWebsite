@@ -6,7 +6,7 @@ const StackIcon = ({stack}) =>{
         <Image 
                 src={`/images/icons/${stack}.png`}
                 alt={stack}
-                className='rounded-lg'
+                className='rounded-lg hover:scale-[1.04]'
                 width={90}
                 height={90}
                 />

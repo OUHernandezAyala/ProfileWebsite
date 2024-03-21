@@ -9,6 +9,16 @@ import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/solid';
 
 
 const NavBar = () => {
+
+    // Función para hacer scroll a una sección después de click en navbar
+    function scrollSection(id) {
+        const section = document.getElementById(id)
+        const yOffset = -100
+        const y = section.getBoundingClientRect().top + window.scrollY + yOffset
+
+        window.scrollTo({ top: y, behavior: "smooth" })
+    }
+
     const[navbarOpen, setNavbarOpen] = useState(false)
 
 
@@ -28,8 +38,8 @@ const NavBar = () => {
     ]
     return(
     <nav className='fixed top-0 left-0 right-0 z-10 bg-[#121212]  border border-[#33353F]  bg-opacity-90'>
-        <div className='flex flex-wrap items-center justify-between mx-auto p-2'>
-            <Link href="/" className='flex items-center justify-between text-xl md:text-5xl text-white font-semibold'>
+        <div className='flex flex-wrap items-center justify-between mx-auto p-2 container'>
+            <a className='flex items-center gap-5 justify-between text-xl md:text-5xl text-white font-semibold cursor-pointer' onClick={() => scrollSection("home")}>
                 <Image 
                 className='object-scale-down rounded-full'
                 src="/images/planet.gif" 
@@ -37,8 +47,8 @@ const NavBar = () => {
                 width={60}
                 height={60}
                 />
-                <span>MyProfile</span> 
-            </Link>
+                <span className='text-[25px]'>My Profile</span> 
+            </a>
             <div className='mobile-menu block md:hidden'>
                 {
                     navbarOpen ? (
