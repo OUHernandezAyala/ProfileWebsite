@@ -7,15 +7,15 @@ const projectsInfo = [
     {
         id:"1",
         title:"My Profile",
-        description:"HolA COMO ES TA",
+        description:"From web development to graphic design, my portfolio reflects my passion and dedication to excellence in every endeavor.",
         tech:(
             <div className="flex">
                 <FaReact/>
             </div>
         ),
         imagen: "/images/projects/Project1.png",
-        gitUrl:"",
-        prevUrl:""
+        gitUrl:"https://github.com/OUHernandezAyala/ProfileWebsite",
+        prevUrl:"https://profile-oscar-uriel-hernandez-ayala-oscar-uriels-projects.vercel.app/"
 
     }
 ]

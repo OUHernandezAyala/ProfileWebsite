@@ -16,7 +16,7 @@ const MySection = () => {
         <section className="lg:py-16 ">
             <div className="grid grid-cols-1 lg:grid-cols-12">
                 <div className="lg:col-span-8 flex flex-col mb-2 place-self-center text-center sm:text-left justify-self-start ">
-                    <h1 className="mb-4 text-4xl lg:text-6xl mx-4 lg:leading-normal font-extrabold">
+                    <div className=" mb-4 text-4xl lg:text-6xl mx-4 lg:leading-normal font-extrabold">
                         <span className="text-transparent bg-clip-text bg-gradient-to-br  from-[#0abdc6]  to-[#ea00d9]">
                             Hello, I`m {" "}
                         </span>
@@ -31,15 +31,16 @@ const MySection = () => {
                         1000
                         ]}
                         wrapper="span"
-                        speed={20}
+                        speed={5}
                         repeat={Infinity}
                     />
-                    </h1>
-                    <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl">
-                     As a Web Developer with an unwavering passion for unlocking new possibilities, I embrace a philosophy that resonates deeply: Begin by doing what`s necessary; then do what`s possible; and suddenly you find yourself accomplishing the impossible.🚀
+                    <p className="text-[#ADB7BE] text-base text-balance mt-6 sm:text-lg lg:text-xl">
+                     As a Web Developer with an unwavering passion for unlocking new possibilities, Begin by doing what`s necessary; then do what`s possible; and suddenly you find yourself accomplishing the impossible.🚀
                     </p>
+                    </div>
+                    
                     <div className="mt-4 mb-2">
-                        <button onClick={scrollToEmailSection} className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 mt-1 bg-gradient-to-br from-[#0abdc6] via-[#711c91] to-[#ea00d9]  hover:bg-slate-900 hover:text-white text-black">
+                        <button onClick={scrollToEmailSection} className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 mt-1 bg-gradient-to-br from-[#0abdc6] via-[#711c91] to-[#ea00d9]  hover:bg-slate-900 hover:text-black text-white">
                             Contact me
                         </button>
                         <button onClick={downloadCV} className="px-1 py-1 w-full sm:w-fit rounded-full mt-3 bg-gradient-to-br from-[#0abdc6] via-[#711c91] to-[#ea00d9] hover:bg-slate-100 hover:text-black text-white">
