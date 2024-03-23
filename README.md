@@ -1,13 +1,11 @@
 # ProfileWebsite
 This repository contains the source code of my personal website. The website is designed to showcase my information in a clear and professional manner, including my biography, skills, featured projects, and contact information. Explore my profile and learn more about me through my website!
-# Proyecto React Next.js con Tailwind CSS y Resend de Next
 
-Este proyecto es una aplicación web desarrollada con React y Next.js, utilizando Tailwind CSS para estilos y Resend de Next para enrutamiento y manejo de datos.
+#React Next.js Project with Tailwind CSS and Next's Resend API
+This project is a web application developed with React and Next.js, using Tailwind CSS for styling and Next's Resend for routing and data handling.
 
-## Requisitos
-
-Asegúrate de tener Node.js y npm instalados en tu sistema.
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+#Requirements
+Make sure you have Node.js and npm installed on your system.
 
 ## Getting Started
 
