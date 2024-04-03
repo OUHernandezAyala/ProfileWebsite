@@ -68,7 +68,7 @@ const ProjectsSection = () => {
     return(
        <div id="projects" className="py-20">
         <h2 className="text-4xl font-bold my-4 text-transparent text-center bg-clip-text bg-gradient-to-br from-[#0abdc6]  to-[#ea00d9]">Projects</h2>
-        <div  className="grid md:grid-cols-3 gap-8 md:gap-6 justify-center w-full" >
+        <div  className="grid md:grid-cols-3 gap-10 md:gap-6 justify-center w-full" >
         {projectsInfo.map((projects)=> 
                 <ProjectsCards 
                 key={projects.id} 
