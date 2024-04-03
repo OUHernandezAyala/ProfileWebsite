@@ -4,7 +4,7 @@ import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/solid";
 
 const ProjectsCards = ({imgenUrl, title, description, tech, gitUrl, prevUrl }) =>{
     return(
-        <div className="mx-2">              
+        <div className="">              
             <div 
             className="h-52 md:h-72  rounded-t-xl relative group"
             style={{background:`url(${imgenUrl})`, backgroundSize:"cover", backgroundPosition:"center"}}
@@ -19,9 +19,9 @@ const ProjectsCards = ({imgenUrl, title, description, tech, gitUrl, prevUrl }) =
              </div> 
             </div>
             <div className="text-white rounded-t-xl bg-[#181818] p-2 px-4">
-                <h5 className="font-xl font-semibold mb-1">{title}</h5>
-                <p className="text-sm font-extralight">{tech}</p>
-                <p className="text-[#ADB7BE]">{description}</p>
+                <h5 className="flex font-xl font-semibold mb-1">{title}</h5>
+                <p className="flex text-sm font-extralight">{tech}</p>
+                <p className="flex text-[#ADB7BE]">{description}</p>
             </div>
         </div>
     )
